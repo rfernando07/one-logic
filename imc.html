@@ -3,20 +3,29 @@
 <script>
 
     function pulaLinha() {
+
         document.write("<br><br>");
     }
 
     function mostra(texto) {
+
         document.write(texto);
         pulaLinha();
     }
 
     function calculaImc(peso, altura) {
+
         var imc = peso / (altura * altura);
-        mostra("O IMC calculado é " + imc);
+        return imc;
     }
 
-    calculaImc(80, 1.76);
-    calculaImc(68, 1.72);
+    var imcRafael = calculaImc(80, 1.76);
+    var imcAmigo = calculaImc(68, 1.72);
+
+    var somaImcs = imcRafael + imcAmigo;
+
+
+    somaImcs = calculaImc(80, 1.76) + calculaImc(68, 1.72);;
+    mostra("A soma dos imc's é " + somaImcs)
 
 </script>
