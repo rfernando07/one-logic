@@ -19,13 +19,12 @@
         return imc;
     }
 
-    var imcRafael = calculaImc(80, 1.76);
-    var imcAmigo = calculaImc(68, 1.72);
+    var nomeInformado = prompt("Informe o seu nome: ");
+    var alturaInformada = prompt(nomeInformado + ", informe sua altura: ");
+    var pesoInformado = prompt(nomeInformado + ", informe seu peso: ");
 
-    var somaImcs = imcRafael + imcAmigo;
+    var imc = calculaImc(pesoInformado, alturaInformada);
 
-
-    somaImcs = calculaImc(80, 1.76) + calculaImc(68, 1.72);;
-    mostra("A soma dos imc's é " + somaImcs)
+    mostra(nomeInformado + ", o IMC calculado é " + imc);
 
 </script>
